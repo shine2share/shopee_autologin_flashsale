@@ -47,9 +47,7 @@ try:
 		usserE = driver.find_element(By.NAME, "loginKey").send_keys(username)
 		passE = driver.find_element(By.NAME, "password").send_keys(password)
 		btnLogin = driver.find_element_by_css_selector("button._35rr5y _32qX4k _1ShBrl _3z3XZ9 _2iOIqx _2h_2_Y").click()
-		close_popup_link = driver.find_element_by_css_selector("shopee-popup shopee-modal__transition-enter-done")
-		ActionChains(driver).move_to_element(close_popup_link).pause(1).click(close_popup_link).perform()
-		x=close_popup_link.click()
+		
 	except Exception as e:
 		print(e)
 		#pass
